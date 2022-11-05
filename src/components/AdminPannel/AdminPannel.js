@@ -42,7 +42,7 @@ function AdminPannel({route,setRoute}){
     function AdminMasoodTable() {
         const [daysData, setDaysData] = useState(null)
         useEffect(() => {
-            fetch('http://localhost:3005/adminmasoodtable', {
+            fetch('http://localhost:3000/adminmasoodtable', {
               method: 'get',
               headers: {'Content-Type': 'application/json'},
             }).then(res => res.json())
@@ -106,7 +106,7 @@ function AdminPannel({route,setRoute}){
                 }
 
 
-                fetch('http://localhost:3005/adminmasoodreserve', {
+                fetch('http://localhost:3000/adminmasoodreserve', {
                     method: 'put',
                     headers: {'Content-Type': 'application/json'},
                     body: JSON.stringify({
