@@ -7,7 +7,7 @@ function ReserveTable({username,usernumber, selectedDate}) {
     const [oneTimeReserve, setOneTimeReserve] = useState('none');
     const[data,setData] = useState(null)
     useEffect(() =>{
-        fetch('http://localhost:3000/masoodtable', {
+        fetch('http://141.11.42.106:3000', {
             method: 'post',
             headers: {'Content-Type': 'application/json'},
             mode: "cors",
@@ -39,7 +39,7 @@ function ReserveTable({username,usernumber, selectedDate}) {
     function Please({shift,id}) {
         const [isFree, setIsFree] = useState('zero')
         function onButtonReserve(){
-            fetch('http://localhost:3000/masoodreserve', {
+            fetch('http://141.11.42.106:3000', {
                 method: 'put',
                 headers: {'Content-Type': 'application/json'},
                 body: JSON.stringify({
