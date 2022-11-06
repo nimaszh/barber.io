@@ -62,14 +62,6 @@ app.put('/adminmasoodreserve', (request,response) => {
 })
 
 
-timeGenerator(dateGenerator(0))
-timeGenerator(dateGenerator(1))
-timeGenerator(dateGenerator(2))
-timeGenerator(dateGenerator(3))
-timeGenerator(dateGenerator(4))
-timeGenerator(dateGenerator(5))
-timeGenerator(dateGenerator(6))
-
 
 
 app.post('/masoodtable', (request,response) => {
